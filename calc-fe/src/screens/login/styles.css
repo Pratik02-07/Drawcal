@@ -1,0 +1,210 @@
+/* Import font */
+@import url('../../fonts.css');
+
+/* Base styles */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-[#fff5eb] {
+  background-color: #fff5eb;
+}
+
+/* Font styles */
+.excalifont-text {
+  font-family: 'Excalifont' !important;
+  letter-spacing: 0.02em;
+}
+
+/* Logo animation */
+svg path:last-child {
+  animation: drawPath 2s ease-out forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Card hover effects */
+.mantine-Paper-root {
+  transition: transform 0.2s ease-in-out;
+}
+
+.mantine-Paper-root:hover {
+  transform: translateY(-4px);
+}
+
+/* Button styles */
+.mantine-Button-root {
+  transition: transform 0.2s ease-in-out;
+}
+
+.mantine-Button-root:hover {
+  transform: scale(1.02);
+}
+
+/* Divider styles */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.divider span {
+  padding: 0 1rem;
+  color: #868e96;
+  font-size: 0.875rem;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.login-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f8d7da;
+  border-radius: 4px;
+}
+
+.google-login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.2s;
+}
+
+.google-login-button:hover:not(:disabled) {
+  background-color: #f8f9fa;
+}
+
+.google-login-button:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.google-login-button img {
+  width: 18px;
+  height: 18px;
+}
+
+.login-help {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.login-help p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.login-help ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.login-help li {
+  margin-bottom: 0.25rem;
+}
+
+/* Font styles */
+.welcome-title {
+  font-family: 'Excalifont', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.brand-text {
+  font-family: 'Excalifont', sans-serif;
+}
+
+.subtitle-text {
+  font-family: 'Excalifont', sans-serif;
+} 
